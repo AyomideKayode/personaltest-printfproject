@@ -4,7 +4,7 @@
 
 int _print_string(char *s)
 {
-	int i = 0, str_val = 0;
+	unsigned int i = 0, str_val = 0;
 
 	if (s)
 	{
@@ -14,6 +14,7 @@ int _print_string(char *s)
 			str_val += 1;
 			i++;
 		}
+		//return (i);
 	}
 	return (str_val);
 }
