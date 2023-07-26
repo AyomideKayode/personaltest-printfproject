@@ -10,10 +10,9 @@
 
 int _print_binary(va_list args_p)
 {
-	unsigned int temp;
 	unsigned int n = va_arg(args_p, unsigned int);
 	int len = 0;
-	char *s = NULL;
+	unsigned int temp = n;
 
 	if (n == 0)
 	{
@@ -21,31 +20,20 @@ int _print_binary(va_list args_p)
 		return (1);
 	}
 
-	temp = n;
+	/* Calculate the number of binary digits (length) */
 	while (temp > 0)
 	{
 		len++;
 		temp >>= 1;
 	}
 
-	s = malloc(sizeof(char) * (len + 1));
-	if (!s)
-		return (-1);
-
-	for (int i = len - 1; i >= 0; i--)
+	/* Print the binary representation in reverse order */
+	while (len > 0)
 	{
-		s[i] = (n & 1) ? '1' : '0';
-		n >>= 1;
+		len--;
+		_putchar((n & (1 << len)) ? '1' : '0');
 	}
 
-	s[len] = '\0';
-
-	for (int i = 0; i < len; i++)
-	{
-		_putchar(s[i]);
-	}
-
-	free(s);
 	return (len);
+	/* The length is already calculated correctly, so len is returned. */
 }
-
