@@ -33,5 +33,6 @@ int print_unsgined_number(unsigned int n);
 int _base_len(unsigned int n, int base);
 void _recursive_binary(unsigned int n);
 int _print_binary(va_list args_p);
+int _unsigned_dec_int(va_list args_p);
 
 #endif /* PRINTF_H */

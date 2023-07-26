@@ -45,6 +45,7 @@ int main(void)
 	printf("Len:[%d]\n", len2);
 	_printf("Unknown:[%r]\n");
 	/* printf("Unknown:[%r]\n");*/
+	_printf("[98:%b], [45:%b], [33:%b], [71:%b], [62:%b] \n", 98, 45, 33, 71, 62);
 
 	return (0);
 }
