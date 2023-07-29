@@ -38,5 +38,6 @@ int _print_hexadecimal(va_list args_p);
 int _print_hexadecimal_X(va_list args_p);
 int _print_S(va_list args_p);
 int _print_hex_2digits(unsigned char num);
+int _print_pointer(va_list args_p);
 
 #endif /* PRINTF_H */
