@@ -1,7 +1,7 @@
 /** Created this file to help with Task 3 of the project that requires us me to 
  * Handle the following conversion specifiers: u,o,x and X.
  */
-
+#include "main.h"
 /**
  * _unsigned_dec_int - Print the decimal representation of an unsigned integer.
  * @args_p: Argument containing the unsigned integer to print.
@@ -11,5 +11,5 @@
 int _unsigned_dec_int(va_list args_p)
 {
 	unsigned int n = va_arg(args_p, unsigned int);
-	return print_unsigned_number(n);
+	return (_print_unsigned_number(n));
 }

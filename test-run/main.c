@@ -46,6 +46,11 @@ int main(void)
 	_printf("Unknown:[%r]\n");
 	/* printf("Unknown:[%r]\n");*/
 	_printf("[98:%b], [45:%b], [33:%b], [71:%b], [62:%b] \n", 98, 45, 33, 71, 62);
+	_printf("%S\n", "Best\nSchool");
+	/* additional test cases from QA review*/
+	_printf("%S", "\n");
+	_printf("%S", "\x01\x02\x03\x04\x05\x06\x07");
+	_printf("Could you print some non-prntable characters?\n%S\nThanks!\n", "Sure:\x1F\x7F\n");
 
-	return (0);
+		return (0);
 }

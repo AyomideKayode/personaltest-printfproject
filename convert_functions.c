@@ -11,5 +11,5 @@
 int _unsigned_dec_int(va_list args_p)
 {
 	unsigned int n = va_arg(args_p, unsigned int);
-	return (print_unsgined_number(n));
+	return (_print_unsigned_number(n));
 }

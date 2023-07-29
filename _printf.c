@@ -17,8 +17,11 @@ int _printf(const char *format, ...)
 		{"d", _print_int},
 		{"i", _print_int},
 		{"b", _print_binary},
-		/* unsigned decimal integer conversion function here */
-		{"u", _unsigned_dec_int},
+		{"o", _print_octal},
+		{"u", unsigned_int},
+		{"x", _print_hexadecimal},
+		{"X", _print_hexadecimal_X},
+		{"S", _print_S},
 		{NULL, NULL}
 	};
 
